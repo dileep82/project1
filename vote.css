@@ -1,0 +1,200 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color:white;
+    font-family: 'Flamenco', cursive;
+
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://static.vecteezy.com/system/resources/previews/000/363/585/original/hand-with-voting-sign-for-election-vector.jpg");
+	height:110vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fieldset  header
+{
+	margin:40px;
+	align:center;
+	box-shadow:0 0 10px #333;
+	border:none;
+	border-radius:10px;
+	background-color:rgba(f,f,f,1);
+}	
+
+input
+{
+	padding:5px;
+	margin:10px;
+	border:none;	
+	box-shadow:0 0 9px #333;
+	
+}
+
+
+
+.clearfix:after{
+	content:".";
+	visibility: hidden;
+	display:block;
+	height:0px;
+	clear:both;
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.logo{
+	height: 200px;
+	width: 300px;
+	float: left;
+	margin-top: 20px;
+	
+}
+.main-nav{
+	float:right;
+	margin-top: 80px;
+
+}
+.main-nav li{
+	display:inline-block;
+	list-style:none;
+	margin-left: 40px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+	font-weight: 100;
+}
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+	
+                     width:1400px;
+	position: absolute;
+	top:70%;
+	left:50%;
+	transform:translate(-50%,-50%);
+                   padding:60px;
+	
+}
+}
+p{
+	color:#ff;
+	font-size: 200%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin top:100px;
+	margin-bottom: 10px;
+	text-transform: auto;
+	font-weight: lighter;
+}
+.a p{
+                     color:yellow;
+	font-size: 160%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin top:100px;
+	margin-bottom: 10px;
+	text-transform: auto;
+	font-weight: lighter;
+}
+}
+
+h1
+{
+	margin:7px;
+	font-weight:700;	
+}
+
+button
+{
+	padding:10px  20px;
+	text-decoration:none;	
+	color:#fff;
+	margin:25px;
+	border-radius:50px;
+	background-color:transparent;;
+}
+
+
+button:hover
+{
+	border:1px solid black;
+	background-color:#fff;
+	transition:0.5s;
+}
+
+
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration:none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s ease,border 0.2s,color 0.2s;
+}
+.btn-full{
+	background-color: transparent;
+	color:#fff;
+	margin-right: 25px;
+
+}
+.btn-full:hover{
+	background-color: #fff;
+	color:#000;
+}
+.btn-nav{
+	background-color: transparent;
+	color:#fff;
+	
+}
+.btn-nav:hover{
+	background-color: #fff;
+                     color:#000;
+}
+.colorchange{
+	animation:colorchangethishi 1s infinite;
+}
+@keyframes colorchangethishi{
+	0%{color:red;}
+	25%{color:#bf55ec;}
+	50%{color:white;}
+	100%{color:#bf55ec;}
+	
+}
+.mobile-icon{display: none;}
+@media only screen and (max-width:1180px){
+	.main-content-header{
+		width:100%;
+		padding:0 2%;
+	}
+}
+@media only screen and (max-width:998px){
+	h1{font-size: 200%;}
+}
+@media only screen and (max-width:768px){
+	h1{font-size: 180%;}
+	.main-nav{display: none;}
+.mobile-icon{
+	display: inline-block;
+	color:#fff;
+	float:right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+}

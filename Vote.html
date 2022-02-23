@@ -1,0 +1,214 @@
+<html>
+<head>
+	<title>Vote Now</title>
+</head>
+
+<body  background="vote india.jpg">
+	<style>
+		body {
+			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size:100% 150%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+	<div class="heading">
+		<img src="vote 2.jfif" width="200px" height="60px" style="float:left" />
+		<img src="election 1.png" width="200px" height="60px" style="float:right" />
+		<font>Election  Commission Of India</font>
+	</div>
+	<style>
+		.heading {
+			font-color:#00FF00;
+			text-align: center;
+			text-decoration: none;
+			font-size: 50px;
+			style-height:120px;
+			height:70px;
+			width:100%;
+		}
+	</style>
+	<div class="topnav">
+		<a href="pro1.html">|Home|</a>
+		
+	</div>
+	<style>
+		.topnav {
+			overflow: hidden;
+			background-color: rgba(0,0,0,1);
+			width: 100%;
+			height: 50px;
+		}
+
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 1% 3%;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.topnav a.active {
+			background-color: rgba(0,0,0,0.5);
+			color: white;
+		}
+
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+	</style><br></br>
+	<center>
+		<div style=" border-radius: 5px; background-color:rgba(255,255,255,0.68); width:70%; padding: 20px;"><br></br>
+			<form action="" method="post" name="loginForm">
+				<h1>Select Candidate To Vote For</h1><br>
+				<table>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mr. ABC</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mr.PRM</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Miss Leena</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mrs. SMK</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mr. SDK</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mr. XYZ</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mr. ATC</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">Mrs. ABK</label></h3></td></tr>
+				<tr><td><h3><input type="radio" id="html" name="Candidates"></h3></td>
+				<td><h3><label for="Mr. ABC">NOTA</label></h3></td></tr>
+    							
+    							
+  						
+  				</table>
+				<br><br>
+				<input class="loginbtn" type="submit" name="loginbtn" value="Submit My Vote" onclick="checkAll()" /><br></br>
+				<style>
+					.loginbtn {
+						background-color: rgba(0,0,0,1);
+						color: White;
+						padding: 12px 20px;
+						margin 8px 0;
+						border: none;
+						cursor: pointer;
+						opacity: 0.9;
+					}
+					.loginbtn:hover{
+						background-color: #ddd;
+						color: black;
+					} 
+					/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+				</style>
+			</form>
+		</div>
+		<div id="message" >
+			<table><tr><td><h3>Password must contain the following:</h3></td></tr>
+			<tr><td><p id="letter" class="invalid">A <b>lowercase</b> letter</p></td></tr>
+			<tr><td><p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p></td></tr>
+			<tr><td><p id="number" class="invalid">A <b>number</b></p></tr></tr>
+			<tr><td><p id="length" class="invalid">Minimum <b>8 characters</b></p></td></tr></table>
+		</div>				
+		<script>
+			var myInput = document.getElementById("psw");
+			var letter = document.getElementById("letter");
+			var capital = document.getElementById("capital");
+			var number = document.getElementById("number");
+			var length = document.getElementById("length");
+
+		// When the user clicks on the password field, show the message box
+			myInput.onfocus = function() {
+				document.getElementById("message").style.display = "block";
+			}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+	</center>
+</body>
+
+</html>
